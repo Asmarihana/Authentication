@@ -1,8 +1,8 @@
 
 ###api1
 POST http://localhost:3000/register
-
 Content-Type: application/json
+
 {
   "username": "adam_richard",
   "name": "Adam Richard",
@@ -13,8 +13,8 @@ Content-Type: application/json
 
 ###api2
 POST http://localhost:3000/login
-
 Content-Type: application/json
+
 {
   "username": "adam_richard",
   "password": "richard_567"
@@ -22,8 +22,8 @@ Content-Type: application/json
 
 ###api3
 PUT  http://localhost:3000/change-password
-
 Content-Type: application/json
+
 {
   "username": "adam_richard",
   "oldPassword": "richard_567",
