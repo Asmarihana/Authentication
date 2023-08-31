@@ -97,7 +97,7 @@ app.put("/change-password", async (request, response) => {
         const encryptedPassword = await bcrypt.hash(newPassword, 10);
         const updateQuery = `
       UPDATE user 
-       SET  newPassword='${encryptedPassword}'
+       SET  password='${encryptedPassword}'
        WHERE username='${username}'`;
         await db.run(updateQuery);
         response.send("Password updated");
